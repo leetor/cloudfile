@@ -20,11 +20,11 @@
             <mvc:mapping path="/share/**"/>
             <mvc:mapping path="/download/**"/>
             <mvc:exclude-mapping path="/share/access"/>
-            <bean class="name.zjq.blog.pcd.interceptor.LoginUserAuthInterceptor"/>
+            <bean class="cloudfile.interceptor.LoginUserAuthInterceptor"/>
         </mvc:interceptor>
         <mvc:interceptor>
             <mvc:mapping path="/share/access"/>
-            <bean class="name.zjq.blog.pcd.interceptor.ShareAccessAuthInterceptor"/>
+            <bean class="cloudfile.interceptor.ShareAccessAuthInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 

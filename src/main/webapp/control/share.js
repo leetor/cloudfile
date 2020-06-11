@@ -27,7 +27,8 @@ app.controller("container", function ($scope, $http) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
         var r = window.location.search.substr(1).match(reg);
         if (r != null)
-            return unescape(r[2]);
+            return unescape(r
+                [2]);
         return null;
     }
     //加载目录

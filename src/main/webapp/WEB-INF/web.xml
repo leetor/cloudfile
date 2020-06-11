@@ -27,7 +27,7 @@
 	</welcome-file-list>
 
 	<listener>
-		<listener-class>name.zjq.blog.pcd.StartOrShutdownListener</listener-class>
+		<listener-class>cloudfile.StartOrShutdownListener</listener-class>
 	</listener>
 	
 </web-app>
